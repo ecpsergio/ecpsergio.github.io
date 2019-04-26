@@ -16,13 +16,20 @@
   <input type="radio" name="Question 1" value="Incorrect"> <em>James Harden</em><br>
   <!-- <input type="submit"> -->
 
-<button onclick="myFunction()">Click Me</button>
+<button onclick="myFunction(this.form)">Click Me</button>
 
 <p id="demo"></p>
 
 <script>
-function myFunction() {
-  document.getElementById("demo").innerHTML = "Correct";
+function myFunction(form) {
+  for(i=0; i<3; i++){
+            item = form.elements[i];
+            if(item.checked){
+                    if (item.value == "Correct"){
+                              document.getElementById("demo").innerHTML = "Correct";
+                    }
+            }          
+  }   
 }
 </script>                    
  
