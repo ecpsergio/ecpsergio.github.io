@@ -35,36 +35,39 @@
                               form.Q5answer.value= result
                     }
           </script>                                        
+                    
+          <p style="text-align:center;"><strong>which player has scored more points:</strong></p>
+
+          <form style="text-align:center;">
+                    <input type="radio" name="Question 1" value="Stephen Curry"><em>Stephen Curry</em><br>
+                    <input type="radio" name="Question 1" value="Lebron James"> <em>Lebron James</em><br>
+                    <input type="radio" name="Question 1" value="James Harden"> <em>James Harden</em><br>
+
+                    <input type="button" value="Submit" onclick="myFunction(this.form);">
+                    <p> Answer <input type=text name="Q1answer">
+
+          </form>
+          
+          <script>
+                    function myFunction(form) {
+                              for(i=0; i<3; i++){
+                                        item = form.elements[i];
+                                        if(item.checked){
+                                                  if (item.value == "Lebron James"){
+                                                            result = "Correct";
+                                                  }
+                                                   else {
+                                                             result = "Incorrect";
+                                                  }
+                                        }
+            
+                              }
+                              form.Q1answer.value= result
+                    }
+          </script>                                        
 
 <!--
-<p style="text-align:center;"><strong>Which player has the most amount of points scored:</strong></p>
-
-
-<form style="text-align:center;">
-  <input type="radio" name="Question 1" value="Stephen Curry"><em> Stephen Curry</em><br>
-  <input type="radio" name="Question 1" value="Lebron James"> <em>Lebron James</em><br>
-  <input type="radio" name="Question 1" value="James Harden"> <em>James Harden</em><br>
-
-<button onclick="myFunction(this.form)">Submit</button>
-
-<p id="demo"></p>
-
-<script>
-function myFunction(form) {
-  for(i=0; i<3; i++){
-            item = form.elements[i];
-            if(item.checked){
-                    if (item.value == "Lebron James"){
-                              document.getElementById("demo").innerHTML = "Correct";
-                    }
-                      else {
-                            document.getElementById("demo").innerHTML = "Incorrect";
-                      }
-            }
-            
-  }   
-}
-</script>                    
+             
  
           
 <p style="text-align:center;"><strong>Which player has the most amount of rings:</strong></p>
