@@ -4,37 +4,37 @@
           <!-- <body background= "NBAPicture.jpg"> -->
 <body>
           
-<h1 style="text-align:center;">Basketball Trivia</h1>
+          <h1 style="text-align:center;">Basketball Trivia</h1>
                     
-<p style="text-align:center;"><strong>which team has the most number of championships:</strong></p>
+          <p style="text-align:center;"><strong>which team has the most number of championships:</strong></p>
 
-<form style="text-align:center;">
-  <input type="radio" name="Question 5" value="Celtics"><em> Celtics</em><br>
-  <input type="radio" name="Question 5" value="Lakers"> <em>Lakers</em><br>
-  <input type="radio" name="Question 5" value="Knicks"> <em>Knicks</em><br>
-  <!-- <input type="submit"> -->
+          <form style="text-align:center;">
+                    <input type="radio" name="Question 5" value="Celtics"><em> Celtics</em><br>
+                    <input type="radio" name="Question 5" value="Lakers"> <em>Lakers</em><br>
+                    <input type="radio" name="Question 5" value="Knicks"> <em>Knicks</em><br>
 
-<button onclick="myFunction(this.form)">Submit</button>
-          <p> Answer <input type=text name="Q5answer">
+                    <button onclick="myFunction(this.form)">Submit</button>
+                    <p> Answer <input type=text name="Q5answer">
 
           </form>
-<script>
-function myFunction(form) {
-  for(i=0; i<3; i++){
-            item = form.elements[i];
-            if(item.checked){
-                    if (item.value == "Celtics"){
-                              result = "Correct";
-                    }
-                      else {
-                            result = "Incorrect";
-                      }
-            }
+          
+          <script>
+                    function myFunction(form) {
+                              for(i=0; i<3; i++){
+                                        item = form.elements[i];
+                                        if(item.checked){
+                                                  if (item.value == "Celtics"){
+                                                            result = "Correct";
+                                                  }
+                                                   else {
+                                                             result = "Incorrect";
+                                                  }
+                                        }
             
-  }
-          form.Q5answer.value= result
-}
-</script>                                        
+                              }
+                              form.Q5answer.value= result
+                    }
+          </script>                                        
 
 <!--
 <p style="text-align:center;"><strong>Which player has the most amount of points scored:</strong></p>
@@ -44,8 +44,7 @@ function myFunction(form) {
   <input type="radio" name="Question 1" value="Stephen Curry"><em> Stephen Curry</em><br>
   <input type="radio" name="Question 1" value="Lebron James"> <em>Lebron James</em><br>
   <input type="radio" name="Question 1" value="James Harden"> <em>James Harden</em><br>
-  <!-- <input type="submit"> -->
-<!--
+
 <button onclick="myFunction(this.form)">Submit</button>
 
 <p id="demo"></p>
@@ -75,8 +74,7 @@ function myFunction(form) {
   <input type="radio" name="Question 2" value="Michael Jordan"><em>Michael Jordan</em><br>
   <input type="radio" name="Question 2" value="Kobe Bryant"> <em>Kobe Bryant</em><br>
   <input type="radio" name="Question 2" value="Lebron James"> <em>Lebron James</em><br>
-  <!-- <input type="submit"> -->
-<!--
+
 <button onclick="myFunction(this.form)">Submit</button>
 
 <p id="demo"></p>
@@ -97,7 +95,7 @@ function myFunction(form) {
   }   
 }
 </script>                    
-  -->    
+      
 <p style="text-align:center;"><strong> How many championships do the Los Angeles Lakers have:</strong></p>
 
 
@@ -105,7 +103,6 @@ function myFunction(form) {
   <input type="radio" name="Question 3" value="17"><em>17</em><br>
   <input type="radio" name="Question 3" value="16"> <em>16</em><br>
   <input type="radio" name="Question 3" value="12"> <em>12</em><br>
-  <!-- <input type="submit"> -->
 
 <button onclick="myFunction(this.form)">Submit</button>
 
@@ -135,7 +132,6 @@ function myFunction(form) {
   <input type="radio" name="Question 4" value="2"><em>2</em><br>
   <input type="radio" name="Question 4" value="10"> <em>10</em><br>
   <input type="radio" name="Question 4" value="1"> <em>1</em><br>
-  <!-- <input type="submit"> -->
 
 <button onclick="myFunction(this.form)">Submit</button>
 
@@ -159,5 +155,6 @@ function myFunction(form) {
 </script>                    
           
 </form>                    
+-->
 </body>
 </html>
