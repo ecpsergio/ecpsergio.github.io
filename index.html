@@ -11,12 +11,12 @@
 
 
 <form style="text-align:center;">
-  <input type="radio" name="Question 1" value="Incorrect"><em> Stephen Curry</em><br>
-  <input type="radio" name="Question 1" value="Correct"> <em>Lebron James</em><br>
-  <input type="radio" name="Question 1" value="Incorrect"> <em>James Harden</em><br>
+  <input type="radio" name="Question 1" value="Stephen Curry"><em> Stephen Curry</em><br>
+  <input type="radio" name="Question 1" value="Lebron James"> <em>Lebron James</em><br>
+  <input type="radio" name="Question 1" value="James Harden"> <em>James Harden</em><br>
   <!-- <input type="submit"> -->
 
-<button onclick="myFunction(this.form)">Click Me</button>
+<button onclick="myFunction(this.form)">Submit</button>
 
 <p id="demo"></p>
 
@@ -25,7 +25,7 @@ function myFunction(form) {
   for(i=0; i<3; i++){
             item = form.elements[i];
             if(item.checked){
-                    if (item.value == "Correct"){
+                    if (item.value == "Lebron James"){
                               document.getElementById("demo").innerHTML = "Correct";
                     }
                       else {
@@ -42,12 +42,12 @@ function myFunction(form) {
 
 
 <form style="text-align:center;">
-  <input type="radio" name="Question 2" value="Correct"><em>Michael Jordan</em><br>
-  <input type="radio" name="Question 2" value="Incorrect"> <em>Kobe Bryant</em><br>
-  <input type="radio" name="Question 2" value="Incorrect"> <em>Lebron James</em><br>
+  <input type="radio" name="Question 2" value="Michael Jordan"><em>Michael Jordan</em><br>
+  <input type="radio" name="Question 2" value="Kobe Bryant"> <em>Kobe Bryant</em><br>
+  <input type="radio" name="Question 2" value="Lebron James"> <em>Lebron James</em><br>
   <!-- <input type="submit"> -->
 
-<button onclick="myFunction(this.form)">Click Me</button>
+<button onclick="myFunction(this.form)">Submit</button>
 
 <p id="demo"></p>
 
@@ -56,7 +56,7 @@ function myFunction(form) {
   for(i=0; i<3; i++){
             item = form.elements[i];
             if(item.checked){
-                    if (item.value == "Correct"){
+                    if (item.value == "Michael Jordan"){
                               document.getElementById("demo").innerHTML = "Correct";
                     }
                       else {
@@ -72,12 +72,12 @@ function myFunction(form) {
 
 
 <form style="text-align:center;">
-  <input type="radio" name="Question 3" value="Incorrect"><em>17</em><br>
-  <input type="radio" name="Question 3" value="Correct"> <em>16</em><br>
-  <input type="radio" name="Question 3" value="Incorrect"> <em>12</em><br>
+  <input type="radio" name="Question 3" value="17"><em>17</em><br>
+  <input type="radio" name="Question 3" value="16"> <em>16</em><br>
+  <input type="radio" name="Question 3" value="12"> <em>12</em><br>
   <!-- <input type="submit"> -->
 
-<button onclick="myFunction(this.form)">Click Me</button>
+<button onclick="myFunction(this.form)">Submit</button>
 
 <p id="play"></p>
 
@@ -86,7 +86,7 @@ function myFunction(form) {
   for(i=0; i<3; i++){
             item = form.elements[i];
             if(item.checked){
-                    if (item.value == "Correct"){
+                    if (item.value == "16"){
                               document.getElementById("play").innerHTML = "Correct";
                     }
                       else {
@@ -97,6 +97,36 @@ function myFunction(form) {
   }   
 }
 </script>                              
+
+<p><strong>What number does Lonzo Ball wear:</strong></p>
+
+
+<form style="text-align:center;">
+  <input type="radio" name="Question 4" value="2"><em>2</em><br>
+  <input type="radio" name="Question 4" value="10"> <em>10</em><br>
+  <input type="radio" name="Question 4" value="1"> <em>1</em><br>
+  <!-- <input type="submit"> -->
+
+<button onclick="myFunction(this.form)">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction(form) {
+  for(i=0; i<3; i++){
+            item = form.elements[i];
+            if(item.checked){
+                    if (item.value == "2"){
+                              document.getElementById("demo").innerHTML = "Correct";
+                    }
+                      else {
+                            document.getElementById("demo").innerHTML = "Incorrect";
+                      }
+            }
+            
+  }   
+}
+</script>                    
           
 </form>                    
 </body>
