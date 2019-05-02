@@ -67,7 +67,36 @@ function myFunction(form) {
   }   
 }
 </script>                    
-          
+      
+<p style="text-align:center;"><strong> How many championships do the Los Angeles Lakers have:</strong></p>
+
+
+<form style="text-align:center;">
+  <input type="radio" name="Question 1" value="Incorrect"><em>17</em><br>
+  <input type="radio" name="Question 1" value="Correct"> <em>16</em><br>
+  <input type="radio" name="Question 1" value="Incorrect"> <em>12</em><br>
+  <!-- <input type="submit"> -->
+
+<button onclick="myFunction(this.form)">Click Me</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction(form) {
+  for(i=0; i<3; i++){
+            item = form.elements[i];
+            if(item.checked){
+                    if (item.value == "Correct"){
+                              document.getElementById("demo").innerHTML = "Correct";
+                    }
+                      else {
+                            document.getElementById("demo").innerHTML = "Incorrect";
+                      }
+            }
+            
+  }   
+}
+</script>                              
           
 </form>                    
 </body>
