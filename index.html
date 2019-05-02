@@ -15,8 +15,8 @@
   <!-- <input type="submit"> -->
 
 <button onclick="myFunction(this.form)">Submit</button>
+          <p> Answer <input type=text name="Q5answer">
 
-<div id="Q5answer"></div>
           </form>
 <script>
 function myFunction(form) {
@@ -24,14 +24,15 @@ function myFunction(form) {
             item = form.elements[i];
             if(item.checked){
                     if (item.value == "Celtics"){
-                              document.getElementById("Q5answer").textContent = "Correct";
+                              result = "Correct";
                     }
                       else {
-                            document.getElementById("Q5answer").textContent = "Incorrect";
+                            result = "Incorrect";
                       }
             }
             
-  }   
+  }
+          form.Q5answer.value= result
 }
 </script>                                        
 
