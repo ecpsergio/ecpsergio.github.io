@@ -79,7 +79,7 @@ function myFunction(form) {
 
 <button onclick="myFunction(this.form)">Click Me</button>
 
-<p id="demo"></p>
+<p id="play"></p>
 
 <script>
 function myFunction(form) {
@@ -87,10 +87,10 @@ function myFunction(form) {
             item = form.elements[i];
             if(item.checked){
                     if (item.value == "Correct"){
-                              document.getElementById("demo").innerHTML = "Correct";
+                              document.getElementById("play").innerHTML = "Correct";
                     }
                       else {
-                            document.getElementById("demo").innerHTML = "Incorrect";
+                            document.getElementById("play").innerHTML = "Incorrect";
                       }
             }
             
