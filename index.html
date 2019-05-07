@@ -14,7 +14,8 @@
                     <input type="radio" name="Question 5" value="Knicks"> <em>Knicks</em><br>
 
                     <input type="button" value="Submit" onclick="myFunction5(this.form);">
-                    <p> Answer <input type=text name="Q5answer">
+                    <!-- <p> Answer <input type=text name="Q5answer"> -->
+                    <div id="Answer"> </div>
 
           </form>
           
@@ -32,7 +33,8 @@
                                         }
             
                               }
-                              form.Q5answer.value= result
+                              //form.Q5answer.value= result
+                              document.getElementById("Answer").textContent = "Correct";
                     }
           </script>                                        
                     
