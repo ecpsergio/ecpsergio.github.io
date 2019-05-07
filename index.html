@@ -144,7 +144,7 @@
                               for(i=0; i<3; i++){
                                         item = form.elements[i];
                                         if(item.checked){
-                                                  if (item.value == "Ben Simmons"){
+                                                  if (item.value == "16"){
                                                             result5 = "Correct";
                                                   }
                                                    else {
@@ -157,6 +157,35 @@
                     }
           </script> 
 
+          <p><strong>Who won the MVP award in 2018:</strong></p>
+
+          <form>
+                    <input type="radio" name="Question 6" value="James Harden"><em>James Harden</em><br>
+                    <input type="radio" name="Question 6" value="Russel Westbrook"><em>Russel Westbrook</em><br>
+                    <input type="radio" name="Question 6" value="Stephen Curry">Stephen Curry<em></em><br>
+
+                    <input type="button" value="Submit" onclick="myFunction6(this.form);">
+                     <div id="Answer6"> </div> 
+                     
+          </form>
+          
+          <script>
+                    function myFunction6(form) {
+                              for(i=0; i<3; i++){
+                                        item = form.elements[i];
+                                        if(item.checked){
+                                                  if (item.value == "James Harden"){
+                                                            result6 = "Correct";
+                                                  }
+                                                   else {
+                                                             result6 = "Incorrect";
+                                                  }
+                                        }
+            
+                              }
+                              document.getElementById("Answer6").textContent = result6;
+                    }
+          </script> 
            
 </body>
 </html>
