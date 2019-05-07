@@ -2,7 +2,36 @@
 <html>
            <body background= "NBAPicture.jpg"> 
 <body>
+           <p><strong>Who won the MVP award in 2018:</strong></p>
+
+          <form>
+                    <input type="radio" name="Question 6" value="James Harden"><em>James Harden</em><br>
+                    <input type="radio" name="Question 6" value="Russel Westbrook"><em>Russel Westbrook</em><br>
+                    <input type="radio" name="Question 6" value="Stephen Curry">Stephen Curry<em></em><br>
+
+                    <input type="button" value="Submit" onclick="myFunction6(this.form);">
+                     <div id="Answer6"> </div> 
+                     
+          </form>
           
+          <script>
+                    function myFunction6(form) {
+                              for(i=0; i<3; i++){
+                                        item = form.elements[i];
+                                        if(item.checked){
+                                                  if (item.value == "James Harden"){
+                                                            result6 = "Correct";
+                                                  }
+                                                   else {
+                                                             result6 = "Incorrect";
+                                                  }
+                                        }
+            
+                              }
+                              document.getElementById("Answer6").textContent = result6;
+                    }
+          </script> 
+           
           <h1 style="text-align:center;">Basketball Trivia</h1>
                     
           <p style="text-align:center;"><strong>which team has the most number of championships:</strong></p>
@@ -127,7 +156,7 @@
                     }
           </script> 
            
-           <p style="text-align:center;"><strong>How many championships do the Los Angeles Lakers have:</strong></p>
+          <p style="text-align:center;"><strong>How many championships do the Los Angeles Lakers have:</strong></p>
 
           <form style="text-align:center;">
                     <input type="radio" name="Question 5" value="12"><em>12</em><br>
@@ -140,7 +169,7 @@
           </form>
           
           <script>
-                    function myFunction5form) {
+                    function myFunction5(form) {
                               for(i=0; i<3; i++){
                                         item = form.elements[i];
                                         if(item.checked){
@@ -157,33 +186,35 @@
                     }
           </script> 
 
-          <p><strong>Who won the MVP award in 2018:</strong></p>
+         
+       
+          <p style="text-align:center;"><strong>How many NBA teams are located in California:</strong></p>
 
-          <form>
-                    <input type="radio" name="Question 6" value="James Harden"><em>James Harden</em><br>
-                    <input type="radio" name="Question 6" value="Russel Westbrook"><em>Russel Westbrook</em><br>
-                    <input type="radio" name="Question 6" value="Stephen Curry">Stephen Curry<em></em><br>
+          <form style="text-align:center;">
+                    <input type="radio" name="Question 7" value="3"><em>3</em><br>
+                    <input type="radio" name="Question 7" value="4"><em>4</em><br>
+                    <input type="radio" name="Question 7" value="5"><em>5</em><br>
 
-                    <input type="button" value="Submit" onclick="myFunction6(this.form);">
-                     <div id="Answer6"> </div> 
+                    <input type="button" value="Submit" onclick="myFunction7(this.form);">
+                     <div id="Answer7"> </div> 
                      
           </form>
           
           <script>
-                    function myFunction6(form) {
+                    function myFunction7(form) {
                               for(i=0; i<3; i++){
                                         item = form.elements[i];
                                         if(item.checked){
-                                                  if (item.value == "James Harden"){
-                                                            result6 = "Correct";
+                                                  if (item.value == "4"){
+                                                            result7 = "Correct";
                                                   }
                                                    else {
-                                                             result6 = "Incorrect";
+                                                             result7 = "Incorrect";
                                                   }
                                         }
             
                               }
-                              document.getElementById("Answer6").textContent = result6;
+                              document.getElementById("Answer7").textContent = result7;
                     }
           </script> 
            
