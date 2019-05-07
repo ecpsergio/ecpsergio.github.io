@@ -8,46 +8,13 @@
           <p style="text-align:center;"><strong>which team has the most number of championships:</strong></p>
 
           <form style="text-align:center;">
-                    <input type="radio" name="Question 5" value="Celtics"><em> Celtics</em><br>
-                    <input type="radio" name="Question 5" value="Lakers"> <em>Lakers</em><br>
-                    <input type="radio" name="Question 5" value="Knicks"> <em>Knicks</em><br>
-
-                    <input type="button" value="Submit" onclick="myFunction5(this.form);">
-                    <!-- <p> Answer <input type=text name="Q5answer"> -->
-                    <div id="Answer"> </div>
-
-          </form>
-          
-          <script>
-                    function myFunction5(form) {
-                              for(i=0; i<3; i++){
-                                        item = form.elements[i];
-                                        if(item.checked){
-                                                  if (item.value == "Celtics"){
-                                                            result = "Correct";
-                                                  }
-                                                   else {
-                                                             result = "Incorrect";
-                                                  }
-                                        }
-            
-                              }
-                              //form.Q5answer.value= result
-                              document.getElementById("Answer").textContent = result;
-                    }
-          </script>                                        
-                    
-          <p style="text-align:center;"><strong>which player has scored more points:</strong></p>
-
-          <form style="text-align:center;">
-                    <input type="radio" name="Question 1" value="Stephen Curry"><em>Stephen Curry</em><br>
-                    <input type="radio" name="Question 1" value="Lebron James"> <em>Lebron James</em><br>
-                    <input type="radio" name="Question 1" value="James Harden"> <em>James Harden</em><br>
+                    <input type="radio" name="Question 1" value="Celtics"><em> Celtics</em><br>
+                    <input type="radio" name="Question 1" value="Lakers"> <em>Lakers</em><br>
+                    <input type="radio" name="Question 1" value="Knicks"> <em>Knicks</em><br>
 
                     <input type="button" value="Submit" onclick="myFunction1(this.form);">
-                    <div id="Solution"> </div>
+                    <div id="Answer1"> </div>
 
-                    
           </form>
           
           <script>
@@ -55,7 +22,7 @@
                               for(i=0; i<3; i++){
                                         item = form.elements[i];
                                         if(item.checked){
-                                                  if (item.value == "Lebron James"){
+                                                  if (item.value == "Celtics"){
                                                             result1 = "Correct";
                                                   }
                                                    else {
@@ -64,21 +31,21 @@
                                         }
             
                               }
-                              //form.Q1answer.value= result
-                              document.getElementById("Solution").textContent = result1;
+                              document.getElementById("Answer1").textContent = result1;
                     }
-          </script>      
-          
-          <p style="text-align:center;"><strong>Who won the 2017 finals:</strong></p>
+          </script>                                        
+                    
+          <p style="text-align:center;"><strong>which player has scored more points:</strong></p>
 
           <form style="text-align:center;">
-                    <input type="radio" name="Question 2" value="Warriors"><em> Warriors</em><br>
-                    <input type="radio" name="Question 2" value="Cavaliers"> <em>Cavaliers</em><br>
-                    <input type="radio" name="Question 2" value="Knicks"> <em>Knicks</em><br>
+                    <input type="radio" name="Question 2" value="Stephen Curry"><em>Stephen Curry</em><br>
+                    <input type="radio" name="Question 2" value="Lebron James"> <em>Lebron James</em><br>
+                    <input type="radio" name="Question 2" value="James Harden"> <em>James Harden</em><br>
 
                     <input type="button" value="Submit" onclick="myFunction2(this.form);">
-                    <p> Answer <input type=text name="Q2answer">
+                    <div id="Answer2"> </div>
 
+                    
           </form>
           
           <script>
@@ -86,28 +53,29 @@
                               for(i=0; i<3; i++){
                                         item = form.elements[i];
                                         if(item.checked){
-                                                  if (item.value == "Warriors"){
-                                                            result = "Correct";
+                                                  if (item.value == "Lebron James"){
+                                                            result2 = "Correct";
                                                   }
                                                    else {
-                                                             result = "Incorrect";
+                                                             result2 = "Incorrect";
                                                   }
                                         }
             
                               }
-                              form.Q2answer.value= result
+                              //form.Q1answer.value= result
+                              document.getElementById("Answer2").textContent = result2;
                     }
           </script>      
-
-          <p style="text-align:center;"><strong>Who won the rookie of the year award in 2018:</strong></p>
+          
+          <p style="text-align:center;"><strong>Who won the 2017 finals:</strong></p>
 
           <form style="text-align:center;">
-                    <input type="radio" name="Question 1" value="Dirk Nowitzki"><em>Dirk Nowitzki</em><br>
-                    <input type="radio" name="Question 1" value="Ben Simmons"><em>Ben Simmons</em><br>
-                    <input type="radio" name="Question 1" value="Lonzo Ball"><em>Lonzo Ball</em><br>
+                    <input type="radio" name="Question 3" value="Warriors"><em> Warriors</em><br>
+                    <input type="radio" name="Question 3" value="Cavaliers"> <em>Cavaliers</em><br>
+                    <input type="radio" name="Question 3" value="Knicks"> <em>Knicks</em><br>
 
                     <input type="button" value="Submit" onclick="myFunction3(this.form);">
-                    <p> Answer <input type=text name="Q3answer">
+                     <div id="Answer3"> </div>
 
           </form>
           
@@ -116,51 +84,79 @@
                               for(i=0; i<3; i++){
                                         item = form.elements[i];
                                         if(item.checked){
-                                                  if (item.value == "Ben Simmons"){
-                                                            result = "Correct";
+                                                  if (item.value == "Warriors"){
+                                                            result3 = "Correct";
                                                   }
                                                    else {
-                                                             result = "Incorrect";
+                                                             result3 = "Incorrect";
                                                   }
                                         }
             
                               }
-                              form.Q3answer.value= result
+                              document.getElementById("Answer3").textContent = result3;
                     }
           </script>      
-<!--
-             
- 
+
+          <p style="text-align:center;"><strong>Who won the rookie of the year award in 2018:</strong></p>
+
+          <form style="text-align:center;">
+                    <input type="radio" name="Question 4" value="Dirk Nowitzki"><em>Dirk Nowitzki</em><br>
+                    <input type="radio" name="Question 4" value="Ben Simmons"><em>Ben Simmons</em><br>
+                    <input type="radio" name="Question 4" value="Lonzo Ball"><em>Lonzo Ball</em><br>
+
+                    <input type="button" value="Submit" onclick="myFunction4(this.form);">
+                     <div id="Answer4"> </div> 
+                     
+          </form>
           
-<p style="text-align:center;"><strong>Which player has the most amount of rings:</strong></p>
-
-
-<form style="text-align:center;">
-  <input type="radio" name="Question 2" value="Michael Jordan"><em>Michael Jordan</em><br>
-  <input type="radio" name="Question 2" value="Kobe Bryant"> <em>Kobe Bryant</em><br>
-  <input type="radio" name="Question 2" value="Lebron James"> <em>Lebron James</em><br>
-
-<button onclick="myFunction(this.form)">Submit</button>
-
-<p id="demo"></p>
-
-<script>
-function myFunction(form) {
-  for(i=0; i<3; i++){
-            item = form.elements[i];
-            if(item.checked){
-                    if (item.value == "Michael Jordan"){
-                              document.getElementById("demo").innerHTML = "Correct";
+          <script>
+                    function myFunction4(form) {
+                              for(i=0; i<3; i++){
+                                        item = form.elements[i];
+                                        if(item.checked){
+                                                  if (item.value == "Ben Simmons"){
+                                                            result4 = "Correct";
+                                                  }
+                                                   else {
+                                                             result4 = "Incorrect";
+                                                  }
+                                        }
+            
+                              }
+                              document.getElementById("Answer4").textContent = result4;
                     }
-                      else {
-                            document.getElementById("demo").innerHTML = "Incorrect";
-                      }
-            }
+          </script> 
+           
+           <p style="text-align:center;"><strong>How many championships do the Los Angeles Lakers have:</strong></p>
+
+          <form style="text-align:center;">
+                    <input type="radio" name="Question 5" value="12"><em>12</em><br>
+                    <input type="radio" name="Question 5" value="14"><em>14</em><br>
+                    <input type="radio" name="Question 5" value="16"><em>16</em><br>
+
+                    <input type="button" value="Submit" onclick="myFunction5(this.form);">
+                     <div id="Answer5"> </div> 
+                     
+          </form>
+          
+          <script>
+                    function myFunction5form) {
+                              for(i=0; i<3; i++){
+                                        item = form.elements[i];
+                                        if(item.checked){
+                                                  if (item.value == "Ben Simmons"){
+                                                            result5 = "Correct";
+                                                  }
+                                                   else {
+                                                             result5 = "Incorrect";
+                                                  }
+                                        }
             
-  }   
-}
-</script>                    
-            
--->
+                              }
+                              document.getElementById("Answer5").textContent = result5;
+                    }
+          </script> 
+
+           
 </body>
 </html>
