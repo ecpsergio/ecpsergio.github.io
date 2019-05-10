@@ -335,6 +335,35 @@
                     }
           </script> 
            
+          <p style="text-align:center;"><strong> Which player received their doctors degree after the NBA:</strong></p>
+
+          <form style="text-align:center;">
+                    <input type="radio" name="Question 11" value="Magic"><em>Magic</em><br>
+                    <input type="radio" name="Question 11" value="Shaq"><em>Shaq</em><br>
+                    <input type="radio" name="Question 11" value="Kobe"><em>Kobe</em><br>
+
+                    <input type="button" value="Submit" onclick="myFunction11(this.form);">
+                     <div id="Answer11"> </div> 
+                     
+          </form>
+          
+          <script>
+                    function myFunction11(form) {
+                              for(i=0; i<3; i++){
+                                        item = form.elements[i];
+                                        if(item.checked){
+                                                  if (item.value == "Shaq"){
+                                                            result11 = "Correct";
+                                                  }
+                                                   else {
+                                                             result11 = "Incorrect";
+                                                  }
+                                        }
+            
+                              }
+                              document.getElementById("Answer11").textContent = result11;
+                    }
+          </script>                                  
            
                       </div>
            </div>
